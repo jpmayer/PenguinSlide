@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Penguin Slide</title>
+        <style type="text/css">
+            @import "http://ajax.googleapis.com/ajax/libs/dojo/1.5/dojo/resources/dojo.css";
+            @import "http://ajax.googleapis.com/ajax/libs/dojo/1.5/dijit/themes/claro/claro.css";
+        
+            html, body, .dijitBorderContainer {width: 100%; height: 100%;}
+
+        </style>
+        <script type="text/javascript">
+            var djConfig = {
+                isDebug: false,
+                parseOnLoad: true,
+                baseUrl: './',
+                modulePaths: {  }
+            };
+        </script>
+        <script type="text/javascript" 
+                src="http://ajax.googleapis.com/ajax/libs/dojo/1.5/dojo/dojo.xd.js">
+        </script>
+        <script type="text/javascript" src="/libs/uow.js"></script>
+        <script type="text/javascript"
+                src="penguinSlide.js">
+        </script>
+    </head>
+    <body>
+        <div align="center" style="position:relative; left:0; top:0; height:540; width:960; border-style:solid" title="Pictures By Sydney Kirk">
+			<h1 id="score" style="position:absolute; left:0; top:0; z-index:3">Score = 0</h1>
+			<h1 id="timer" style="position:absolute; left:400; top:0; z-index:3">Time Remaining 1:00</h1>
+			<img src="backgame.png" id="background" style="position:absolute; left:0; top:0; z-index:-3"><img src="penguino.png" id="penguin"  style="position:absolute; left:400; top:150; z-index: 2">
+			<img src="icefat.png" id="iceberg"  style="position:absolute; left:100; top:250; z-index:-1"><img src="puffy.png" id="fish"  style="position:absolute; left:200; top:250; z-index:1">
+			<img src="pop.png" id="pop"  style="position:absolute; left:400; top:250; z-index:1" hidden="true"><img src="waves1.png" id="backwaves"  style="position:absolute; left:0; bottom:0; z-index:-2">
+			<img src="waves3.png" id="frontwaves"  style="position:absolute; left:0; bottom:0; z-index:0">
+		</div>
+    </body>
+</html>
